@@ -1,0 +1,1 @@
+NB: using "bootstrap.min.css" file from completed project since it does not display correctly with the newest version of Bootstrap - see "old" folder
