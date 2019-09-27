@@ -207,10 +207,11 @@ MH - # CUSTOM STYLES (from B2W static website)
 	display: block;
 }
 
-.post,
+/*MH - removed so that there is no space under the footer*/
+/*.post,
 .page {
 	margin: 0 0 1.5em;
-}
+}*/
 
 .updated:not(.published) {
 	display: none;
@@ -503,7 +504,7 @@ blockquote:before {
 #hero {
 	background: url('/wordpress/wp-content/themes/bootstrap2wordpress/assets/img/hero-bg.jpg') 50% 0 repeat fixed;
 	min-height: 500px;
-	padding: 40px 0;
+	padding: 100px 0 40px;
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
