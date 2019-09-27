@@ -11,26 +11,28 @@
 
 ?>
 
-	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bootstrap2wordpress' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'bootstrap2wordpress' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bootstrap2wordpress' ), 'bootstrap2wordpress', '<a href="http://discovermax.co.za/">Maxine Harris</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- ERROR: Failed to load resource: net::ERR_FILE_NOT_FOUND - FIXED BY ADDING "http:" -->
+<script src="<?php bloginfo('template_directory') ?>/assets/js/jquery-3.4.1.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/assets/js/old/bootstrap.min.js"></script> <!-- NB: using file from completed project since it does not display correctly with the newest version of Bootstrap  -->
+<script src="<?php bloginfo('template_directory') ?>/assets/js/main.js"></script>
+
+<!-- NB - a strange glitch: this code does not work from the external style sheet
+================================================== -->
+<style>
+	i.ci {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background: url('assets/img/icon-sprite.png') no-repeat;
+	}
+</style>
 
 </body>
 </html>
