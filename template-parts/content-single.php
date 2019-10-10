@@ -1,13 +1,4 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Bootstrap_to_WordPress
- */
-
-?>
+<!-- MH - was not in the Underscores starter template, I just copied the code from content.php and used the "entry-content" and "entry-footer" divs that came with the Underscores starter theme -->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -49,9 +40,8 @@
 		</div><!-- post-image -->
 	<?php } ?>
 
-	<!-- MH - added the post excerpt container and a function to retreive the post excerpt -->
-	<div class="post-excerpt">
-		<?php the_excerpt(); ?>
-	</div><!-- post-excerpt -->
+	<div class="post-body">
+		<?php the_content(); ?>
+	</div><!-- post-body -->
 	
 </article><!-- #post-<?php the_ID(); ?> -->

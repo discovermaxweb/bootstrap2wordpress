@@ -17,7 +17,6 @@ get_header();
 
 <!-- FEATURE IMAGE
 ================================================== -->
-THIS IS THE INDEX.PHP FILE (EXCLUDING THE HEADER)
 <section class="feature-image feature-image-default-alt" data-type="background" data-speed="2">
 	<h1 class="page-title">Blog</h1>
 </section>
@@ -53,8 +52,6 @@ THIS IS THE INDEX.PHP FILE (EXCLUDING THE HEADER)
 
 				endwhile;
 
-				the_posts_navigation();
-
 			else :
 
 				get_template_part( 'template-parts/content', 'none' );
@@ -75,8 +72,5 @@ THIS IS THE INDEX.PHP FILE (EXCLUDING THE HEADER)
 	</div><!-- primary -->
 </div><!-- container -->
 
-THIS IS THE END OF THE INDEX.PHP FILE (EXCLUDING THE SIDEBAR AND FOOTER)
-
 <?php
-get_sidebar();
 get_footer();

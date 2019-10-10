@@ -10,16 +10,18 @@
 get_header();
 ?>
 
-THIS IS THE SINGLE.PHP FILE (EXCLUDING THE HEADER)
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<!-- MAIN CONTENT
+================================================== -->
+<div class="container">
+	<div class="row" id="primary">
+	
+		<main id="content" class="col-sm-8">
 
 		<?php
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			get_template_part( 'template-parts/content', 'single' );
 
 			the_post_navigation();
 
@@ -32,10 +34,17 @@ THIS IS THE SINGLE.PHP FILE (EXCLUDING THE HEADER)
 		?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
 
-THIS IS THE END OF THE SINGLE.PHP FILE (BESIDES FOR THE SIDEBAR AND FOOTER)
+		<!-- SIDEBAR
+		================================================== -->
+		<aside class="col-sm-4">
+
+			<?php get_sidebar(); ?>
+
+		</aside>
+
+	</div><!-- primary -->
+</div><!-- container -->
 
 <?php
-get_sidebar();
 get_footer();
