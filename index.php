@@ -29,8 +29,6 @@ THIS IS THE INDEX.PHP FILE (EXCLUDING THE HEADER)
 	    
 		<main id="content" class="col-sm-8" role="main">
 
-			NEW CODE
-
 			<?php
 			if ( have_posts() ) :
 
