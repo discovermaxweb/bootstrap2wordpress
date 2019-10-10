@@ -9,6 +9,8 @@
 
 ?>
 
+THIS IS THE CONTENT.PHP FILE
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -57,3 +59,5 @@
 		<?php bootstrap2wordpress_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+THIS IS THE END OF THE CONTENT.PHP FILE

@@ -10,6 +10,8 @@
 get_header();
 ?>
 
+THIS IS THE SINGLE.PHP FILE (EXCLUDING THE HEADER)
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -31,6 +33,8 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+THIS IS THE END OF THE SINGLE.PHP FILE (BESIDES FOR THE SIDEBAR AND FOOTER)
 
 <?php
 get_sidebar();
